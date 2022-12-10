@@ -8,14 +8,20 @@ function ContactMe({}: Props) {
     const form = useRef();
 
     const sendEmail = (e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_lfxvvvi', 'template_3lqyb3j', form.current, '0ZGzh-KQhKteDV5ap')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        e.preventDefault();
+
+        const currentForm = form.current;
+        // this prevents sending emails if there is no form.
+        // in case currentForm cannot possibly ever be null,
+        // you could alert the user or throw an Error, here
+        if (currentForm == null) return;
+    
+        emailjs.sendForm('service_lfxvvvi', 'template_3lqyb3j', currentForm, '0ZGzh-KQhKteDV5ap')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     return (
