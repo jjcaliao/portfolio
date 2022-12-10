@@ -36,7 +36,7 @@ function ContactMe({}: Props) {
                         <p className='text-xl'>jcaliao098@gmail.com</p>
                     </div>
                 </div>
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-2 md:w-fit mx-auto sm:w-[100%]'>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-2 md:w-fit mx-auto w-[100%]'>
                     <div className='flex space-x-2'>
                         <input name="name" className='contactInput w-[50%]' type="text" placeholder='Name' />
                         <input name="email" className='contactInput w-[50%]' type="email" placeholder='Email' />
