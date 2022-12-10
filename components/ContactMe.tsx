@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 type Props = {};
 
 function ContactMe({}: Props) {
-    const form = useRef();
+    const form = useRef<HTMLFormElement | null>(null);
 
     const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
