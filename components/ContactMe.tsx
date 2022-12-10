@@ -36,10 +36,10 @@ function ContactMe({}: Props) {
                         <p className='text-xl'>jcaliao098@gmail.com</p>
                     </div>
                 </div>
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-2 w-fit mx-auto'>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-2 md:w-fit mx-auto sm:w-[100%]'>
                     <div className='flex space-x-2'>
-                        <input name="name" className='contactInput' type="text" placeholder='Name' />
-                        <input name="email" className='contactInput' type="email" placeholder='Email' />
+                        <input name="name" className='contactInput w-[50%]' type="text" placeholder='Name' />
+                        <input name="email" className='contactInput w-[50%]' type="email" placeholder='Email' />
                     </div>
                     <input name="subject" className='contactInput' type="text" placeholder='Subject' />
                     <textarea name="message" className='contactInput scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#ee5edf]/80' placeholder='Message'/>
