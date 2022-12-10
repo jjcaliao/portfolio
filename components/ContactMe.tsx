@@ -7,7 +7,7 @@ type Props = {};
 function ContactMe({}: Props) {
     const form = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: { preventDefault: () => void; }) => {
       e.preventDefault();
   
       emailjs.sendForm('service_lfxvvvi', 'template_3lqyb3j', form.current, '0ZGzh-KQhKteDV5ap')
