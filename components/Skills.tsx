@@ -38,7 +38,7 @@ function Skills({}: Props) {
             <Skill 
               key={4}
               imageSource={"./images/skill-logos/react.png"} 
-              proficiency="70"
+              proficiency="75"
             />
             <Skill 
               key={5}
@@ -54,6 +54,16 @@ function Skills({}: Props) {
               key={7}
               imageSource={"./images/skill-logos/aws.png"} 
               proficiency="30"
+            />
+            <Skill 
+              key={8}
+              imageSource={"./images/skill-logos/php.png"} 
+              proficiency="65"
+            />
+            <Skill 
+              key={9}
+              imageSource={"./images/skill-logos/firebase.png"} 
+              proficiency="60"
             />
         </div>
     </motion.div>
