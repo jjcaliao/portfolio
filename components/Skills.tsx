@@ -37,31 +37,36 @@ function Skills({}: Props) {
             />
             <Skill 
               key={4}
+              imageSource={"./images/skill-logos/java.png"} 
+              proficiency="55"
+            />
+            <Skill 
+              key={5}
               imageSource={"./images/skill-logos/react.png"} 
               proficiency="75"
             />
             <Skill 
-              key={5}
+              key={6}
               imageSource={"./images/skill-logos/next.png"} 
               proficiency="70"
             />
             <Skill 
-              key={6}
+              key={7}
               imageSource={"./images/skill-logos/bootstrap.png"} 
               proficiency="90"
             />
             <Skill 
-              key={7}
+              key={8}
               imageSource={"./images/skill-logos/aws.png"} 
               proficiency="30"
             />
             <Skill 
-              key={8}
+              key={9}
               imageSource={"./images/skill-logos/php.png"} 
               proficiency="65"
             />
             <Skill 
-              key={9}
+              key={10}
               imageSource={"./images/skill-logos/firebase.png"} 
               proficiency="60"
             />
