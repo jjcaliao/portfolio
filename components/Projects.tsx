@@ -111,6 +111,31 @@ function Projects({}: Props) {
           </div>
         </div>
 
+        {/* 5th project */}
+
+          <div key={4} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+            <motion.img 
+              initial={{ 
+                y: -300,
+                opacity: 0, 
+              }}
+              whileInView={{
+                y: 0,
+                opacity: 1,
+              }}
+              transition={{ duration:1.2 }}
+              viewport={{ once: true }}
+              className='w-[100%] h-auto max-w-[500px] md:-[80%] md:max-w-[500px] object-cover' src="/images/project-photos/airbnb-clone.png" alt="" 
+            />
+            <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
+            <Link href="https://airbnb-clone-orcin-kappa.vercel.app/"><h4 className='text-2xl font-semibold text-center'>5. Airbnb clone</h4></Link>
+              <p className='text-sm text-center lg:text-lg'>
+                Re-created the UI, as well as responsiveness, for the Airbnb web application using react and tailwind.css. 
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className='w-full absolute top-[30%] bg-[#ee5edf]/10 left-0 h-[400px] -skew-y-12'>
         </div>
     </motion.div>
