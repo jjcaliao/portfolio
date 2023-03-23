@@ -109,7 +109,6 @@ function Projects({}: Props) {
               </p>
             </div>
           </div>
-        </div>
 
         {/* 5th project */}
 
