@@ -129,7 +129,7 @@ function Projects({}: Props) {
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
             <Link href="https://airbnb-clone-orcin-kappa.vercel.app/"><h4 className='text-2xl font-semibold text-center'>5. Airbnb clone</h4></Link>
               <p className='text-sm text-center lg:text-lg'>
-                Re-created the UI, as well as responsiveness, for the Airbnb web application using react and tailwind.css. 
+                Re-created the UI, as well as responsiveness, for the Airbnb web application using react and tailwind.css. Created own API to generate fake airbnb data and demonstrate SSR skills.
               </p>
             </div>
           </div>
